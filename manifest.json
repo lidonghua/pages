@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Pages",
+  "version": "0.0.1",
+  "description": "Load your dianping.com shop photos automatically as you see.",
+  "content_scripts": [
+    {
+      "matches": ["http://www.dianping.com/*"],
+      "css": [],
+      "js": ["jquery-1.10.2.min.js", "pages.js"]
+    }
+  ]
+}
