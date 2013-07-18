@@ -16,7 +16,6 @@ function get_page_count() {
   return max;
 };
 
-console.log(document.location.href);
 var loading = false;
 var loading_status = $('#loading-status');
 

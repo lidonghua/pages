@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Load your dianping.com shop photos automatically as you see.",
   "content_scripts": [
     {
