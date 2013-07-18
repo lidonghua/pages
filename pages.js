@@ -16,6 +16,7 @@ function get_page_count() {
   return max;
 };
 
+console.log(document.location.href);
 var loading = false;
 var loading_status = $('#loading-status');
 
@@ -26,7 +27,7 @@ function get_page(page_num) {
   loading = true;
   loading_status.html("载入中……");
   $.ajax({
-    url: 'http://www.dianping.com/shop/4101807/photos?pg=' + page_num,
+    url: document.location.href + '?pg=' + page_num,
   }).done(function (data) {
     pictures = $(data).find('.J_list');
     picture_list = $('.picture-list ul');
